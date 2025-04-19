@@ -59,6 +59,16 @@ pandas.read_html()
 pd.ExcelWriter(..., engine='openpyxl')
 ```
 
+## 1-6 PKG Install：
+```bash
+pip install
+pip requests
+pip pandas
+pip beautifulsoup4
+pip lxml
+pip openpyxl
+```
+
 ## 套件互動關係圖：
 ```bash
 [ requests ] → 下載 HTML
@@ -70,5 +80,45 @@ pd.ExcelWriter(..., engine='openpyxl')
 [ openpyxl ] ← pandas.to_excel → 寫入 Excel 檔
 ```
 
+-------
 
+# 2. py
+## 2-1. 03_GetWebAllTableToExcelByUrl.py
+輸入要解析的網頁並將表格提取儲存至Excel。
 
+-------
+
+# 3. exe
+## 3-1. WebTableToExcel_py\dist\03_GetWebAllTableToExcelByUrl.exe
+打包成執行檔，開啟即可使用。
+
+```bash
+#打包成 exe 套件
+pip install pyinstaller
+
+#--onefile	打包成單一檔案（所有模組都打進去）
+#--noconsole	不開啟黑色命令列（適合 GUI 程式）
+#pyinstaller --onefile --noconsole webtable_to_excel.py
+pyinstaller --onefile 03_GetWebAllTableToExcelByUrl.py
+```
+
+![image](https://github.com/user-attachments/assets/a7dac395-eebc-438d-8cb1-29bfeed81298)
+
+![image](https://github.com/user-attachments/assets/7cb0e808-9994-438f-9fec-204435e30ee5)
+
+![image](https://github.com/user-attachments/assets/faadf299-bab6-4a0f-9765-5aa9766b7429)
+
+![image](https://github.com/user-attachments/assets/64c9ee45-4924-4139-ae0d-be7a70fe29c8)
+
+------
+
+## About Me
+Thanks & Best Regards !
+
+蔡承廷
+
+​Senior Engineer of Semiconductor Product/Testing & ​Automation
+
+Email: ​​kp924606@gmail.com
+
+LinkedIn:https://www.linkedin.comin/tsai-cheng-ting/
